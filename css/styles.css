@@ -28,6 +28,11 @@ header {
     background-size: cover;
 }
 
+@media only screen and (max-width: 768px) {
+    header h2 {
+        font-size: 20px;
+    }
+}
 
 @media only screen and (max-width: 576px) {
     header h2 {
@@ -35,7 +40,13 @@ header {
     }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 380px) {
+    header h2 {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
     header h2 {
         font-size: 8px;
     }
