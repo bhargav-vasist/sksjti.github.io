@@ -28,6 +28,9 @@ header {
     background-size: cover;
 }
 
+.card:hover {
+    border: solid #000000 1px;
+}
 @media only screen and (max-width: 768px) {
     header h2 {
         font-size: 20px;
