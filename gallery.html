@@ -17,7 +17,7 @@
                 padding: 15px;
                 height: 200px;
                 object-fit: cover;
-                transition: all 0.5s;
+                transition: all 0.2s;
             }
             .non-ie-image:hover {
                 padding: 5px;
@@ -31,11 +31,52 @@
             .card {
                 border-color: #aaaaaa;
                 margin-top: 10px;
+                transition: all 0.2s;
             }
             .card:hover {
+                cursor: pointer;
                 border-color: #cccccc;
                 box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.5),
                     0 5px 10px 0 rgba(0, 0, 0, 0.6);
+            }
+            .gallery-div {
+                position: fixed;
+                top: 0px;
+                overflow: auto;
+                width: 100%;
+                height: 100%;
+                z-index: 5000;
+                background-color: rgba(50, 50, 50, 0.7);
+            }
+            .gallery-container {
+                position: absolute;
+                height: 70%;
+                width: 70%;
+                margin: 0;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+            }
+            .close {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                color: white;
+                cursor: pointer;
+                
+            }
+            .gallery-image {
+                height: 100%;
+                position: absolute;
+                margin: 0;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                background-color: #fff;
+                padding: 5px;
+                border: solid #ddd 2px;
             }
         </style>
     </head>
@@ -89,10 +130,10 @@
                             </div>
                         </div>
                         
-                        <a class="nav-link nav-item" href="#">Placement</a>
-                        <a class="nav-link nav-item" href="#">Gallery</a>
-                        <a class="nav-link nav-item" href="#">About</a>
-                        <a class="nav-link nav-item" href="#">Contact US</a>
+                                    <a class="nav-link nav-item" href="#">Placement</a>
+                                    <a class="nav-link nav-item" href="#">Gallery</a>
+                                    <a class="nav-link nav-item" href="#">About</a>
+                                    <a class="nav-link nav-item" href="#">Contact US</a>
                     </div>
                 </div>
             </div>
@@ -119,139 +160,139 @@
                 <figure class="figure mt-3">
                     <div class="card-columns">
                         <div class="card">
-                            <a href="images/image.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image1.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image1.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image2.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image2.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image4.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image4.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image1.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image1.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image2.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image2.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image3.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image3.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image4.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image4.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image3.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image3.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image1.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image1.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image2.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image2.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image3.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image3.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image4.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image4.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image1.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image1.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image2.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image2.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image3.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image3.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image4.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image4.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image3.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image3.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
+                            
                         </div>
                     </div>
                 </figure>
@@ -265,139 +306,139 @@
                 <figure class="figure mt-3">
                     <div class="card-columns">
                         <div class="card">
-                            <a href="images/image.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image1.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image1.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image2.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image2.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image4.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image4.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image1.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image1.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image2.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image2.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image3.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image3.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image4.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image4.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image3.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image3.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image1.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image1.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image2.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image2.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image3.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image3.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image4.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image4.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image1.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image1.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image2.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image2.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image3.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image3.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image4.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image4.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image3.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image3.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
+                            
                         </div>
                     </div>
                 </figure>
@@ -411,139 +452,139 @@
                 <figure class="figure mt-3">
                     <div class="card-columns">
                         <div class="card">
-                            <a href="images/image.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image1.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image1.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image2.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image2.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image4.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image4.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image1.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image1.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image2.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image2.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image3.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image3.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image4.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image4.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image3.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image3.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image1.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image1.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image2.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image2.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image3.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image3.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image4.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image4.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image1.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image1.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image2.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image2.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image3.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image3.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image4.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image4.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image3.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image3.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
+                            
                         </div>
                     </div>
                 </figure>
@@ -557,139 +598,139 @@
                 <figure class="figure mt-3">
                     <div class="card-columns">
                         <div class="card">
-                            <a href="images/image.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image1.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image1.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image2.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image2.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image4.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image4.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image1.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image1.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image2.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image2.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image3.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image3.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image4.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image4.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image3.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image3.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image1.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image1.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image2.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image2.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image3.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image3.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image4.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image4.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image1.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image1.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image2.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image2.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image3.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image3.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image4.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image4.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image5.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image5.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
+                            
                         </div>
                         <div class="card">
-                            <a href="images/image3.jpg" target="_self">
-                                <img class="card-image non-ie-image" src="images/image3.jpg" alt="Image"/>
-                            </a>
+                            
+                                <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
+                            
                         </div>
                     </div>
                 </figure>
@@ -724,6 +765,14 @@
                 </div>
             </div>
         </footer>
+<!--
+        <div class="gallery-div">
+            <span class="close">&times;</span>
+            <div class="gallery-container">
+                <img src="images/image1.jpg" class="gallery-image" />
+            </div>
+        </div>
+-->
 
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/popper.min.js"></script>
@@ -745,6 +794,33 @@
                     }
                 });
             }
+            $(".card").on("click", function() {
+                var imagePath = $(this).find("img").prop("src");
+                imagePath = imagePath.replace("thumbnails", "images");
+                var grandDiv = document.createElement("div");
+                grandDiv.setAttribute("class", "gallery-div");
+                var parentDiv = document.createElement("div");
+                parentDiv.setAttribute("class", "gallery-container");
+                var img = document.createElement("img");
+                img.setAttribute("class", "gallery-image");
+                img.setAttribute("src", imagePath);
+                
+                var close = document.createElement("span");
+                close.innerHTML = "&times;";
+                close.setAttribute("class", "close");
+                
+                
+                parentDiv.appendChild(img);
+                grandDiv.appendChild(close);
+                grandDiv.appendChild(parentDiv);
+                $('body').append(grandDiv);
+                
+                $(close).on("click", function() {
+                    $(".gallery-image").remove();
+                    $(".gallery-container").remove();
+                    $(".gallery-div").remove();
+                });    
+            });
         </script>
     </body>
 </html>
