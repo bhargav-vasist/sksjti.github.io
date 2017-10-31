@@ -6,79 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-        <style type="text/css">
-            figure {
-                width: 100%;
-            }
-            .card-image {
-                width: 100%;
-            }
-            .non-ie-image {
-                padding: 15px;
-                height: 200px;
-                object-fit: cover;
-                transition: all 0.2s;
-            }
-            .non-ie-image:hover {
-                padding: 5px;
-            }
-            .ie-image {
-                height: 200px;
-                background-size: cover;
-                background-position: center center;
-                
-            }
-            .card {
-                border-color: #aaaaaa;
-                margin-top: 10px;
-                transition: all 0.2s;
-            }
-            .card:hover {
-                cursor: pointer;
-                border-color: #cccccc;
-                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.5),
-                    0 5px 10px 0 rgba(0, 0, 0, 0.6);
-            }
-            .gallery-div {
-                position: fixed;
-                top: 0px;
-                overflow: auto;
-                width: 100%;
-                height: 100%;
-                z-index: 5000;
-                background-color: rgba(50, 50, 50, 0.7);
-            }
-            .gallery-container {
-                position: absolute;
-                height: 70%;
-                width: 70%;
-                margin: 0;
-                top: 50%;
-                left: 50%;
-                margin-right: -50%;
-                transform: translate(-50%, -50%);
-            }
-            .close {
-                position: absolute;
-                top: 15px;
-                right: 15px;
-                color: white;
-                cursor: pointer;
-                
-            }
-            .gallery-image {
-                height: 100%;
-                position: absolute;
-                margin: 0;
-                top: 50%;
-                left: 50%;
-                margin-right: -50%;
-                transform: translate(-50%, -50%);
-                background-color: #fff;
-                padding: 5px;
-                border: solid #ddd 2px;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="css/gallery.css"/>
     </head>
     
     
@@ -130,10 +58,10 @@
                             </div>
                         </div>
                         
-                                    <a class="nav-link nav-item" href="#">Placement</a>
-                                    <a class="nav-link nav-item" href="#">Gallery</a>
-                                    <a class="nav-link nav-item" href="#">About</a>
-                                    <a class="nav-link nav-item" href="#">Contact US</a>
+                        <a class="nav-link nav-item" href="#">Placement</a>
+                        <a class="nav-link nav-item" href="#">Gallery</a>
+                        <a class="nav-link nav-item" href="#">About</a>
+                        <a class="nav-link nav-item" href="#">Contact US</a>
                     </div>
                 </div>
             </div>
@@ -158,141 +86,141 @@
                 <h2 id="cat1">Image Category 1</h2>
                 <hr/>
                 <figure class="figure mt-3">
-                    <div class="card-columns">
-                        <div class="card">
-                            
+                    <div class="row">
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
                     </div>
                 </figure>
@@ -304,141 +232,141 @@
                 <h2 id="cat2">Image Category 2</h2>
                 <hr/>
                 <figure class="figure mt-3">
-                    <div class="card-columns">
-                        <div class="card">
-                            
+                    <div class="row">
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
                     </div>
                 </figure>
@@ -450,141 +378,141 @@
                 <h2 id="cat3">Image Category 3</h2>
                 <hr/>
                 <figure class="figure mt-3">
-                    <div class="card-columns">
-                        <div class="card">
-                            
+                    <div class="row">
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
                     </div>
                 </figure>
@@ -596,141 +524,141 @@
                 <h2 id="cat4">Image Category 4</h2>
                 <hr/>
                 <figure class="figure mt-3">
-                    <div class="card-columns">
-                        <div class="card">
-                            
+                    <div class="row">
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image1.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image2.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image4.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image5.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
-                        <div class="card">
-                            
+                        <div class="image-expand col-12 col-sm-6 col-md-4">
+                            <div class="card">
                                 <img class="card-image non-ie-image" src="thumbnails/image3.jpg" alt="Image"/>
-                            
+                            </div>
                         </div>
                     </div>
                 </figure>
@@ -765,12 +693,15 @@
                 </div>
             </div>
         </footer>
+        
 <!--
-        <div class="gallery-div">
-            <span class="close">&times;</span>
-            <div class="gallery-container">
-                <img src="images/image1.jpg" class="gallery-image" />
+        <div class="image-container">
+            <div class="image-buttons">
+                <span class="left">&lt;</span>
+                <span class="right">&gt;</span>
+                <span class="quit">&times;</span>
             </div>
+            <img src="images/image3.jpg" class="gallery-image" />
         </div>
 -->
 
@@ -778,49 +709,7 @@
         <script type="text/javascript" src="js/popper.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
-        <script type="text/javascript">
-            var userAgent, ieReg, ie;
-            userAgent = window.navigator.userAgent;
-            ieReg = /msie|Trident.*rv[ :]*11\./gi;
-            edgeReg = /.*Edge/gi; 
-            ie = ieReg.test(userAgent) | edgeReg.test(userAgent);
-            if(ie) {
-                $(".card").each(function() {
-                   var container = $(this),
-                       imgUrl = container.find("img").prop("src");
-                    if(imgUrl) {
-                        container.find("img").prop("src", "").prop("alt", "");
-                        container.css('backgroundImage', 'url(' + imgUrl + ')').addClass("ie-image");
-                    }
-                });
-            }
-            $(".card").on("click", function() {
-                var imagePath = $(this).find("img").prop("src");
-                imagePath = imagePath.replace("thumbnails", "images");
-                var grandDiv = document.createElement("div");
-                grandDiv.setAttribute("class", "gallery-div");
-                var parentDiv = document.createElement("div");
-                parentDiv.setAttribute("class", "gallery-container");
-                var img = document.createElement("img");
-                img.setAttribute("class", "gallery-image");
-                img.setAttribute("src", imagePath);
-                
-                var close = document.createElement("span");
-                close.innerHTML = "&times;";
-                close.setAttribute("class", "close");
-                
-                
-                parentDiv.appendChild(img);
-                grandDiv.appendChild(close);
-                grandDiv.appendChild(parentDiv);
-                $('body').append(grandDiv);
-                
-                $(close).on("click", function() {
-                    $(".gallery-image").remove();
-                    $(".gallery-container").remove();
-                    $(".gallery-div").remove();
-                });    
-            });
+        <script type="text/javascript" src="js/gallery.js">
         </script>
     </body>
 </html>
