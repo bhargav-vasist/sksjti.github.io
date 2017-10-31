@@ -48,7 +48,7 @@ figure {
     -webkit-user-select: none;
 }
 .image-buttons {
-    position: fixed;
+    position: absolute;
     top: 15px;
     right: 35px;
     z-index: 1;
@@ -81,4 +81,13 @@ figure {
     transform: translate(-50%, -50%);
     background-color: #fff;
 */
+}
+@media only screen and (max-width: 576px) {
+    .gallery-image {
+        width: 100%;
+        border: none;
+    }
+    .image-buttons {
+        font-size: 25px;
+    }
 }
