@@ -22,9 +22,3 @@ $(window).resize(function() {
         }
     }
 });
-
-$(function() {
-    $(".carousel").carousel({
-        interval: 2000
-    }); 
-});
