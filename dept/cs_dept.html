@@ -6,6 +6,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="../css/styles.css"/>
+        <style type="text/css">
+            .card {
+                cursor: pointer;
+                transition: all 0.2s;
+            }
+            .card:hover {
+                box-shadow: 0px 10px 45px 2px #353a40;
+            }
+            img {
+                pointer-events: none;
+            }
+            .faculty-details {
+                border-left: #dddddd solid 1px;
+            }
+        </style>
     </head>
     
     <body>
@@ -123,6 +138,152 @@
                 <div class="card-deck">
                     <div class="row">
                         <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="card mt-3 mb-3" data-toggle="modal" data-target=".faculty1">
+                                <img class="card-img-top img-fluid" src="../images/male.jpg" alt="Faculty Image"/>
+                                <div class="card-body">
+                                    <h3 class="card-title">Faculty Name</h3>
+                                    <p class="card-text">
+                                        Qualification<br/>
+                                        Experience<br/>
+                                        Post
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    Email: abcdef@hijk.com
+                                </div>
+                            </div>
+                            <div class="modal fade faculty1" tabindex="-1" role="dialog" aria-labelle="faculty1Modal" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Faculty 1</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-4 text-center">
+                                                    <img class="img-fluid mb-4" src="../images/male.jpg" alt="Faculty1">
+                                                </div>
+                                                <div class="col-12 col-lg-8 pl-4 faculty-details">
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                                    </p>
+                                                    <h5>Area of Expertise</h5>
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                                    </p>
+                                                    <h5>Achievements</h5>
+                                                    <p>
+                                                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="card mt-3 mb-3" data-toggle="modal" data-target=".faculty2">
+                                <img class="card-img-top img-fluid" src="../images/male.jpg" alt="Faculty Image"/>
+                                <div class="card-body">
+                                    <h3 class="card-title">Faculty Name</h3>
+                                    <p class="card-text">
+                                        Qualification<br/>
+                                        Experience<br/>
+                                        Post
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    Email: abcdef@hijk.com
+                                </div>
+                            </div>
+                            <div class="modal fade faculty2" tabindex="-1" role="dialog" aria-labelle="faculty2Modal" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Faculty 2</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-4 text-center">
+                                                    <img class="img-fluid mb-4" src="../images/male.jpg" alt="Faculty2">
+                                                </div>
+                                                <div class="col-12 col-lg-8 pl-4 faculty-details">
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                                    </p>
+                                                    <h5>Area of Expertise</h5>
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                                    </p>
+                                                    <h5>Achievements</h5>
+                                                    <p>
+                                                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="card mt-3 mb-3" data-toggle="modal" data-target=".faculty3">
+                                <img class="card-img-top img-fluid" src="../images/male.jpg" alt="Faculty Image"/>
+                                <div class="card-body">
+                                    <h3 class="card-title">Faculty Name</h3>
+                                    <p class="card-text">
+                                        Qualification<br/>
+                                        Experience<br/>
+                                        Post
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    Email: abcdef@hijk.com
+                                </div>
+                            </div>
+                            <div class="modal fade faculty3" tabindex="-1" role="dialog" aria-labelle="faculty3Modal" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Faculty 3</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-4 text-center">
+                                                    <img class="img-fluid mb-4" src="../images/male.jpg" alt="Faculty3">
+                                                </div>
+                                                <div class="col-12 col-lg-8 pl-4 faculty-details">
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                                    </p>
+                                                    <h5>Area of Expertise</h5>
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                                    </p>
+                                                    <h5>Achievements</h5>
+                                                    <p>
+                                                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-sm-6 col-lg-4" data-toggle="modal" data-target=".faculty4">
                             <div class="card mt-3 mb-3">
                                 <img class="card-img-top img-fluid" src="../images/male.jpg" alt="Faculty Image"/>
                                 <div class="card-body">
@@ -137,63 +298,48 @@
                                     Email: abcdef@hijk.com
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-4">
-                            <div class="card mt-3 mb-3">
-                                <img class="card-img-top img-fluid" src="../images/male.jpg" alt="Faculty Image"/>
-                                <div class="card-body">
-                                    <h3 class="card-title">Faculty Name</h3>
-                                    <p class="card-text">
-                                        Qualification<br/>
-                                        Experience<br/>
-                                        Post
-                                    </p>
-                                </div>
-                                <div class="card-footer">
-                                    Email: abcdef@hijk.com
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-4">
-                            <div class="card mt-3 mb-3">
-                                <img class="card-img-top img-fluid" src="../images/male.jpg" alt="Faculty Image"/>
-                                <div class="card-body">
-                                    <h3 class="card-title">Faculty Name</h3>
-                                    <p class="card-text">
-                                        Qualification<br/>
-                                        Experience<br/>
-                                        Post
-                                    </p>
-                                </div>
-                                <div class="card-footer">
-                                    Email: abcdef@hijk.com
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-4">
-                            <div class="card mt-3 mb-3">
-                                <img class="card-img-top img-fluid" src="../images/male.jpg" alt="Faculty Image"/>
-                                <div class="card-body">
-                                    <h3 class="card-title">Faculty Name</h3>
-                                    <p class="card-text">
-                                        Qualification<br/>
-                                        Experience<br/>
-                                        Post
-                                    </p>
-                                </div>
-                                <div class="card-footer">
-                                    Email: abcdef@hijk.com
+                            <div class="modal fade faculty4" tabindex="-1" role="dialog" aria-labelle="faculty4Modal" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Faculty 4</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-4 text-center">
+                                                    <img class="img-fluid mb-4" src="../images/male.jpg" alt="Faculty4">
+                                                </div>
+                                                <div class="col-12 col-lg-8 pl-4 faculty-details">
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                                    </p>
+                                                    <h5>Area of Expertise</h5>
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                                    </p>
+                                                    <h5>Achievements</h5>
+                                                    <p>
+                                                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="col-12 col-sm-6 col-lg-4">
-                            <div class="card mt-3 mb-3">
+                            <div class="card mt-3 mb-3" data-toggle="modal" data-target=".yamuna">
                                 <img class="card-img-top img-fluid" src="../images/female.jpg" alt="Faculty Image"/>
                                 <div class="card-body">
                                     <h3 class="card-title">Yamuna R</h3>
                                     <p class="card-text">
                                         B.E, M.Tech (CSE)<br/>
-                                        12 Years Experience<br/>
+                                        12 Years of Experience<br/>
                                         Assistant Professors
                                     </p>
                                 </div>
@@ -201,15 +347,48 @@
                                     Email: yamunaraju2003@gmail.com
                                 </div>
                             </div>
+                            <div class="modal fade yamuna" tabindex="-1" role="dialog" aria-labelle="yamunaModal" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Yamuna R</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-4 text-center">
+                                                    <img class="img-fluid mb-4" src="../images/female.jpg" alt="Yamuna">
+                                                </div>
+                                                <div class="col-12 col-lg-8 pl-4 faculty-details">
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                                    </p>
+                                                    <h5>Area of Expertise</h5>
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                                    </p>
+                                                    <h5>Achievements</h5>
+                                                    <p>
+                                                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        
                         <div class="col-12 col-sm-6 col-lg-4">
-                            <div class="card mt-3 mb-3">
+                            <div class="card mt-3 mb-3" data-toggle="modal" data-target=".prathibha">
                                 <img class="card-img-top img-fluid" src="../images/female.jpg" alt="Faculty Image"/>
                                 <div class="card-body">
-                                    <h3 class="card-title">Pratibha T</h3>
+                                    <h3 class="card-title">Prathibha T</h3>
                                     <p class="card-text">
                                         B.E, M.Tech (CSE)<br/>
-                                        9.5 Years Experience<br/>
+                                        9.5 Years of Experience<br/>
                                         Assistant Professor
                                     </p>
                                 </div>
@@ -217,15 +396,48 @@
                                     Email: prathi_prami@rediffmail.com
                                 </div>
                             </div>
+                            <div class="modal fade prathibha" tabindex="-1" role="dialog" aria-labelle="prathibhaModal" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Prathibha T</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-4 text-center">
+                                                    <img class="img-fluid mb-4" src="../images/female.jpg" alt="Prathibha">
+                                                </div>
+                                                <div class="col-12 col-lg-8 pl-4 faculty-details">
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                                    </p>
+                                                    <h5>Area of Expertise</h5>
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                                    </p>
+                                                    <h5>Achievements</h5>
+                                                    <p>
+                                                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        
                         <div class="col-12 col-sm-6 col-lg-4">
-                            <div class="card mt-3 mb-3">
+                            <div class="card mt-3 mb-3" data-toggle="modal" data-target=".harsharani">
                                 <img class="card-img-top img-fluid" src="../images/female.jpg" alt="Faculty Image"/>
                                 <div class="card-body">
                                     <h3 class="card-title">Harsharani K S</h3>
                                     <p class="card-text">
                                         B.E, M.Tech (CSE)<br/>
-                                        8 Years Experience<br/>
+                                        8 Years of Experience<br/>
                                         Assistant Professor
                                     </p>
                                 </div>
@@ -233,7 +445,40 @@
                                     Email: rani21.harsha@gmail.com
                                 </div>
                             </div>
+                            <div class="modal fade harsharani" tabindex="-1" role="dialog" aria-labelle="harsharaniModal" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Harsharani K S</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-4 text-center">
+                                                    <img class="img-fluid mb-4" src="../images/female.jpg" alt="Harsharani">
+                                                </div>
+                                                <div class="col-12 col-lg-8 pl-4 faculty-details">
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                                    </p>
+                                                    <h5>Area of Expertise</h5>
+                                                    <p>
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                                    </p>
+                                                    <h5>Achievements</h5>
+                                                    <p>
+                                                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
                 <hr/>
