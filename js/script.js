@@ -11,14 +11,14 @@ $(document).scroll(function() {
             $('#navigation').addClass('bg-dark');
         }
     }
+    $(window).resize(function() {
+        if (window.innerWidth < 768) {
+            if ($('#navigation').hasClass('final-nav-block')) {
+                $('#navigation').removeClass('final-nav-block');
+                $('#navigation').addClass('initial-nav-block');
+                $('#navigation').addClass('bg-dark');
+            }
+        }
+    });
 });
 
-$(window).resize(function() {
-    if (window.innerWidth < 768) {
-        if ($('#navigation').hasClass('final-nav-block')) {
-            $('#navigation').removeClass('final-nav-block');
-            $('#navigation').addClass('initial-nav-block');
-            $('#navigation').addClass('bg-dark');
-        }
-    }
-});
