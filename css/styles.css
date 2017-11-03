@@ -15,6 +15,7 @@ header {
     position: fixed;
     top: 0;
     background-color: #000000;
+    box-shadow: 0 5px 15px 2px #353a40;
     z-index: 1000;
 }
 .image-set {
@@ -26,10 +27,6 @@ header {
         rgba(53, 58, 64, 0.8)),
         url(../images/image.jpg) no-repeat fixed;
     background-size: cover;
-}
-
-.card:hover {
-    border: solid #000000 1px;
 }
 @media only screen and (max-width: 768px) {
     header h2 {
