@@ -35,7 +35,8 @@ $(document).ready(function () {
 
     $(".image-expand").on("click", function (e) {
 
-
+        $("html").css("overflow", "hidden");                    //Check for reliability
+        
         var current = $(this);
         var imagePath = current.find("img").prop("src");
 
@@ -46,45 +47,53 @@ $(document).ready(function () {
         var img = $("<img>");
         
         img.attr({src: imagePath, class: "gallery-image"});
-        
-        var imgBtn = $("<div>");
-        imgBtn.attr("class", "image-buttons");
 
         var left = $("<span>");
+        left.attr("class", "image-buttons left");
         left.html("&lt;");
 
         var right = $("<span>");
+        right.attr("class", "image-buttons right");
         right.html("&gt;");
 
         var quit = $("<span>");
+        quit.attr("class", "image-buttons quit");
         quit.html("&times;");
-        quit.attr("class", "quit");
         
-        var spinner = $("<span>");
+        var spinContainer = $("<div>");
+        spinContainer.attr("class", "spin-container");
+        
+        var spinner = $("<div>");
         spinner.attr("class", "spinner");
 
+        spinContainer.append(spinner);
         
-        
-        imgBtn.append(left);
-        imgBtn.append(right);
-        imgBtn.append(quit);
+        parentDiv.append(left);
+        parentDiv.append(right);
+        parentDiv.append(quit);
 
-        parentDiv.append(imgBtn);
         parentDiv.append(img);
-        parentDiv.append(spinner);
+        parentDiv.append(spinContainer);
         $('body').append(parentDiv);
         
         
         img.on('load', function (e) {
-            $(".spinner").remove();
+            $(".spin-container").remove();
         });
 
         $(left).on("click", function (e) {
             var prev = current.prev().find("img").prop("src");
             if (prev !== undefined) {
-                var spinner = $("<span>");
+                
+                var spinContainer = $("<div>");
+                spinContainer.attr("class", "spin-container");
+
+                var spinner = $("<div>");
                 spinner.attr("class", "spinner");
-                parentDiv.append(spinner);
+
+                spinContainer.append(spinner);
+                
+                parentDiv.append(spinContainer);
                 prev = prev.replace("thumbnails", "images");
                 img.attr("src", prev);
                 current = current.prev();
@@ -94,9 +103,15 @@ $(document).ready(function () {
         $(right).on("click", function (e) {
             var next = current.next().find("img").prop("src");
             if (next !== undefined) {
-                var spinner = $("<span>");
+                var spinContainer = $("<div>");
+                spinContainer.attr("class", "spin-container");
+
+                var spinner = $("<div>");
                 spinner.attr("class", "spinner");
-                parentDiv.append(spinner);
+
+                spinContainer.append(spinner);
+                
+                parentDiv.append(spinContainer);
                 next = next.replace("thumbnails", "images");
                 img.attr("src", next);
                 current = current.next();
@@ -104,9 +119,8 @@ $(document).ready(function () {
         });
 
         $(quit).on("click", function (e) {
-            $(".image-buttons").remove();
-            $(".gallery-image").remove();
             $(".image-container").remove();
+            $("html").css("overflow", "auto");      //Check for reliability
         });
     });
 });
