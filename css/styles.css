@@ -1,7 +1,7 @@
 hr {
     background-color: #ffffff;
 }
-header {
+.banner {
     width: 100%;
     padding: 25px;
     color: #ffffff;
@@ -17,7 +17,39 @@ header {
     background-color: #000000;
     box-shadow: 0 5px 15px 2px #353a40;
     z-index: 1000;
+    animation: fall 0.2s;
 }
+
+/*
+.rise-nav-block {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #000000;
+    box-shadow: 0 5px 15px 2px #353a40;
+    z-index: 1000;
+    animation: rise 0.2s;
+}
+@keyframes rise {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(0, -50px); }
+}
+.fall-nav-block {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #000000;
+    box-shadow: 0 5px 15px 2px #353a40;
+    z-index: 1000;
+    animation: fall 0.2s;
+}
+*/
+@keyframes fall {
+    0% { transform: translate(0, -50px); }
+    100% { transform: translate(0, 0px); }
+}
+
+
 .image-set {
     pointer-events: none;
 }
@@ -28,6 +60,7 @@ header {
         url(../images/image.jpg) no-repeat fixed;
     background-size: cover;
 }
+
 @media only screen and (max-width: 768px) {
     header h2 {
         font-size: 20px;
