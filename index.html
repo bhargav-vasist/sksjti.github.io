@@ -85,7 +85,7 @@
 
         
         
-        <section class="rolling-images bg-dark">
+        <section class="rolling-images bg-secondary">
 <!--            <article class="container">-->
                 <div id="carousel-images" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -258,14 +258,11 @@
                     
                     if(path) {
                         $(element).css({
-                            backgroundColor: "rgba(53, 58, 64, 1)",
                             backgroundImage: "url(" + path + ")",
                             backgroundSize: "cover",
                             backgroundPosition: "center center"
                         });
                     }
-                    console.log($(element).css("background"));
-                    console.log(path);
                 });
             });
                 
