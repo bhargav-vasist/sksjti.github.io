@@ -4,6 +4,12 @@ figure {
 .card-image {
     width: 100%;
 }
+.hide {
+    display: none;
+}
+.img-cat {
+    cursor: pointer;
+}
 .non-ie-image {
     padding: 15px;
     height: 200px;

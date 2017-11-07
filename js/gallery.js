@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var userAgent, ieReg, edgeReg, ie;
+    var userAgent, ieReg, edgeReg;
     userAgent = window.navigator.userAgent;
     ieReg = /msie|Trident.*rv[ :]*11\./gi;
     edgeReg = /.*Edge/gi;
@@ -17,21 +17,70 @@ $(document).ready(function () {
     //Adding Links
     //-------------------------------------------------------
     
-    var ul = $("<ul>");
-    ul.addClass("list-unstyled");
+//    var ul = $("<ul>");
+//    ul.addClass("list-unstyled");
+//    var count = 0;
+//    $("h2.img-cat").each(function (index, element) {
+//        $(element).attr("id", $(element).attr("class") + (count++));
+//        var anchor = $("<a>");
+//        var li = $("<li>");
+//        anchor.html($(element).text());
+//        anchor.attr("href", "#" + $(element).attr("id"));
+//        li.css({"display": "inline-block", "padding": "10px 20px 10px 0px"});
+//        li.append(anchor);
+//        ul.append(li);
+//    });
+//    $("#links").append(ul);
+    
     var count = 0;
-    $("h2.img-cat").each(function (index, element) {
-        $(element).attr("id", $(element).attr("class") + (count++));
+    var dropdown = $("<div>");
+    dropdown.addClass("dropdown");
+    var btn = $("<button>");
+    btn.text("Jump to");
+    btn.addClass("btn btn-secondary dropdown-toggle");
+    btn.attr("id", "categoryButton");
+    btn.attr("type", "button");
+    btn.attr("data-toggle", "dropdown");
+    btn.attr("aria-haspopus", "true");
+    btn.attr("aria-expanded", "false");
+    var dropdown_menu = $("<div>");
+    dropdown_menu.addClass("dropdown-menu");
+    dropdown_menu.attr("aria-labelledby", "categoryButton");
+    
+    $("h2.img-cat").each(function (index, element){
         var anchor = $("<a>");
-        var li = $("<li>");
-        anchor.html($(element).text());
+        $(element).attr("id", "img-cat" + (count++));
+        anchor.addClass("dropdown-item");
         anchor.attr("href", "#" + $(element).attr("id"));
-        li.css({"display": "inline-block", "padding": "10px 20px 10px 0px"});
-        li.append(anchor);
-        ul.append(li);
+        anchor.html($(element).html());
+        dropdown_menu.append(anchor);
     });
-    $("#links").append(ul);
+    dropdown.append(btn);
+    dropdown.append(dropdown_menu);
+    $("#links").append(dropdown);
+    
+//    console.log(dropdown[0]);
     //-------------------------------------------------------
+    
+    
+    var counter = 0;
+    $("figure").each(function (index, element){
+        $(element).attr("id", "figure" + counter);
+        counter++;
+//        $(element).addClass("hide");
+//        console.log(element); 
+    });
+//    
+    counter = 0;
+    $(".img-cat").each(function (index, element) {
+        var selector = "#figure" + counter;
+        $(element).on("click", function () {
+//            console.log(element);
+            $(selector).toggleClass("hide");
+//            console.log($(selector));
+        });
+        counter++;
+    });
 
     $(".image-expand").on("click", function (e) {
 

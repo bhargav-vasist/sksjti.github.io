@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Sample Page</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Govt. Sri Krishnarajendra Silver Jubilee Technological Institute</title>
         
 <!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">-->
-        
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
         <style type="text/css">
@@ -63,12 +64,19 @@
                             <a class="nav-link nav-item" href="admission.html">Admission</a>
 
                             <div class="dropdown">
-                                <a class="nav-link nav-item dropdown-toggle" href="#" id="navdropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Department</a>
+                                <a class="nav-link nav-item dropdown-toggle" href="#" id="navdropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Departments</a>
                                 <div class="dropdown-menu" aria-labelledby="navdropdown">
-                                    <a class="dropdown-item" href="dept/cs_dept.html">Computer Science</a>
-                                    <a class="dropdown-item" href="dept/ec_dept.html">Electronics</a>
-                                    <a class="dropdown-item" href="dept/cv_dept.html">Civil</a>
-                                    <a class="dropdown-item" href="dept/sk_tx_dept.html">Silk &amp; Textile</a>
+                                    <a class="dropdown-item" href="dept/bs_dept.html">Basic Science &amp; Humanity</a>
+                                    <div class="dropdown-divider"></div>
+                                    <h6 class="dropdown-header">Under Graduate (B.E)</h6>
+                                    <a class="dropdown-item" href="dept/ug/cs_dept.html">Computer Science</a>
+                                    <a class="dropdown-item" href="dept/ug/ec_dept.html">Electronics</a>
+                                    <a class="dropdown-item" href="dept/ug/cv_dept.html">Civil</a>
+                                    <a class="dropdown-item" href="dept/ug/sk_tx_dept.html">Silk &amp; Textile</a>
+                                    <div class="dropdown-divider"></div>
+                                    <h6 class="dropdown-header">Post Graduate (M.Tech)</h6>
+                                    <a class="dropdown-item" href="dept/pg/cv_dept.html">Civil</a>
+                                    <a class="dropdown-item" href="dept/pg/sk_tx_dept.html">Silk &amp; Textile</a>
                                 </div>
                             </div>
 
@@ -245,10 +253,16 @@
         <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript">
             $(function() {
+                //Redundant
+                //------------------------------
                 $(".carousel").carousel({
                     interval: 5000,
                     ride: "carousel"
                 });
+                //------------------------------
+                
+                //object-fit: cover
+                //----------------------------------------------------
                 var images = $('.carousel-item');
                 images.each(function (index, element) {
                     var img = $(element).find("img");
@@ -264,6 +278,7 @@
                         });
                     }
                 });
+                //------------------------------------------------------
             });
                 
         </script>
