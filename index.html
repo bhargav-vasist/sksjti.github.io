@@ -29,7 +29,7 @@
     
     <body class="bg-light">
 
-        <header>
+        <header class="bg-dark">
             <div class="banner">
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
@@ -176,7 +176,7 @@
 <!--            </div>-->
         </section>
         
-        <section class="bg-dark text-white article-section">
+        <section class="bg-dark text-white">
             <div class="container">
                 <div class="row">
                     <main class="col-sm-6 col-lg-3 p-3 text-justify">
@@ -212,7 +212,7 @@
             </div>
         </section>
         
-        <footer class="bg-dark pb-5 pt-5 text-white article-section">
+        <footer class="bg-dark pb-5 pt-5 text-white">
             <div class="container">
                 <p class="display-4">Quick Link</p>
                 <hr/>
@@ -279,6 +279,15 @@
                     }
                 });
                 //------------------------------------------------------
+                console.log(window.navigator.userAgent);
+                console.log(
+                    ((window.navigator.userAgent).match(/Chrome\/[0-9\.]*/)) + "\n" +
+                    ((window.navigator.userAgent).match(/Firefox\/[0-9\.]*/)) + "\n" +
+                    ((window.navigator.userAgent).match(/Safari\/[0-9\.]*/)) + "\n" +
+                    ((window.navigator.userAgent).match(/Edge\/[0-9\.]*/))
+                );
+                br = window.navigator.userAgent;
+                
             });
                 
         </script>
