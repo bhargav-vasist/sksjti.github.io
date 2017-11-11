@@ -1,84 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Sample Page</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Govt. Sri Krishnarajendra Silver Jubilee Technological Institute</title>
         
 <!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">-->
-        
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <style type="text/css">
+/*
+            header {
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+            }
+            .banner {
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+            .initial-nav-block {
+                background-color: rgba(53, 58, 64, 0.9);
+            }
+*/
+        </style>
     </head>
     
-    <body>
+    <body class="bg-light">
 
-        <header>
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col col-sm-3 col-md-3 col-lg-2">
-                        <a href="index.html">
-                            <img src="images/GOK.png" class="img-fluid"/>
-                        </a>
-                    </div>
-                    <div class="col col-sm-6 col-md-6 col-lg-8 text-center">
-                        <h2>
-                            Govt. Sri Krishnarajendra Silver Jubilee Technological Institute
-                        </h2>
-                    </div>
-                    <div class="col col-sm-3 col-md-3 col-lg-2">
-                        <a href="index.html">
-                            <img src="images/CollegeLogo.png" class="img-fluid"/>
-                        </a>
+        <header class="bg-dark">
+            <div class="banner">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col col-sm-3 col-lg-2">
+                            <a href="index.html">
+                                <img src="images/GOK.png" class="img-fluid"/>
+                            </a>
+                        </div>
+                        <div class="col col-sm-6 col-lg-8 text-center">
+                            <h2>
+                                Govt. Sri Krishnarajendra Silver Jubilee Technological Institute
+                            </h2>
+                        </div>
+                        <div class="col col-sm-3 col-lg-2">
+                            <a href="index.html">
+                                <img src="images/CollegeLogo.png" class="img-fluid"/>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <nav class="navbar navbar-expand-md navbar-dark initial-nav-block"
+                 id="navigation">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle Navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navContent">
+                        <div class="navbar-nav">
+                            <a class="nav-link nav-item" href="index.html">Home</a>
+                            <a class="nav-link nav-item" href="admission.html">Admission</a>
+
+                            <div class="dropdown">
+                                <a class="nav-link nav-item dropdown-toggle" href="#" id="navdropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Departments</a>
+                                <div class="dropdown-menu" aria-labelledby="navdropdown">
+                                    <a class="dropdown-item" href="dept/bs_dept.html">Basic Science &amp; Humanity</a>
+                                    <div class="dropdown-divider"></div>
+                                    <h6 class="dropdown-header">Under Graduate (B.E)</h6>
+                                    <a class="dropdown-item" href="dept/ug/cs_dept.html">Computer Science</a>
+                                    <a class="dropdown-item" href="dept/ug/ec_dept.html">Electronics</a>
+                                    <a class="dropdown-item" href="dept/ug/cv_dept.html">Civil</a>
+                                    <a class="dropdown-item" href="dept/ug/sk_tx_dept.html">Silk &amp; Textile</a>
+                                    <div class="dropdown-divider"></div>
+                                    <h6 class="dropdown-header">Post Graduate (M.Tech)</h6>
+                                    <a class="dropdown-item" href="dept/pg/cv_dept.html">Civil</a>
+                                    <a class="dropdown-item" href="dept/pg/sk_tx_dept.html">Silk &amp; Textile</a>
+                                </div>
+                            </div>
+
+                            <a class="nav-link nav-item" href="placements.html">Placements</a>
+                            <a class="nav-link nav-item" href="gallery.html">Gallery</a>
+                            <a class="nav-link nav-item" href="about.html">About</a>
+                            <a class="nav-link nav-item" href="contact.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </header>
         
-        <div class="m-4">
-        </div>
-        
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark initial-nav-block"
-             id="navigation">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle Navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navContent">
-                    <div class="navbar-nav">
-                        <a class="nav-link nav-item" href="index.html">Home</a>
-                        <a class="nav-link nav-item" href="#">Admission</a>
-                        
-                        <div class="dropdown">
-                            <a class="nav-link nav-item dropdown-toggle" href="#" id="navdropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Department</a>
-                            <div class="dropdown-menu" aria-labelledby="navdropdown">
-                                <a class="dropdown-item" href="dept/cs_dept.html">Computer Science</a>
-                                <a class="dropdown-item" href="dept/ec_dept.html">Electronics</a>
-                                <a class="dropdown-item" href="dept/cv_dept.html">Civil</a>
-                                <a class="dropdown-item" href="dept/sk_tx_dept.html">Silk &amp; Textile</a>
-                            </div>
-                        </div>
-                        
-                        <a class="nav-link nav-item" href="#">Placement</a>
-                        <a class="nav-link nav-item" href="gallery.html">Gallery</a>
-                        <a class="nav-link nav-item" href="#">About</a>
-                        <a class="nav-link nav-item" href="#">Contact US</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
 
-        <section class="bg-light pt-4 pb-4">
-            <article class="container">
-                <h1>About</h1>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            
-            </article>
         
-        </section>
         
-        <section class="rolling-images bg-dark">
-            <article class="container">
+        <section class="rolling-images bg-secondary">
+<!--            <article class="container">-->
                 <div id="carousel-images" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carousel-images" data-slide-to="0" class="active"></li>
@@ -89,19 +105,19 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100 img-fluid image-set" src="images/image1.jpg" alt="Slide"/> 
+                            <img class="w-100 img-fluid image-set" src="images/coll.jpg" alt="Slide"/> 
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100 img-fluid image-set" src="images/image2.jpg" alt="Slide"/>
+                            <img class="w-100 img-fluid image-set" src="images/image2.jpg" alt="Slide"/>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100 img-fluid image-set" src="images/image3.jpg" alt="Slide"/>
+                            <img class="w-100 img-fluid image-set" src="images/image3.jpg" alt="Slide"/>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100 img-fluid image-set" src="images/image4.jpg" alt="Slide"/>
+                            <img class="w-100 img-fluid image-set" src="images/image4.jpg" alt="Slide"/>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100 img-fluid image-set" src="images/image5.jpg" alt="Slide"/>
+                            <img class="w-100 img-fluid image-set" src="images/image5.jpg" alt="Slide"/>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel-images" role="button" data-slide="prev">
@@ -113,38 +129,54 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-            </article>
+<!--            </article>-->
         </section>    
 
-        <section class="bg-light pt-4">
+        <section class="pt-4 pb-4">
+            <article class="container">
+                <h1>About the Institute</h1>
+                The Government Sri Krishnarajendra Silver Jubilee Technological Institute, Bangalore, affiliated to Visvesvaraya Technological University, Belgaum, Karnataka State, was founded in the year 1938. Sir Mirza Ismail and Sir M. Visvesvaraya, the two statesmen, were responsible for the construction of this edifice as a mark of celebration of 25 years of benevolent to commemorate the Silver Jubilee of an eventful reign of Late His Highness Nalwadi Krishnarajendra Wodeyar Bahadur, Maharaja of Mysore. This institution being the first of its kind in South India with a view to provide well trained personnel for higher rungs of the organized textile industry covering various facets of the industry, is growing in its heights year after year and today it can claim to be the tallest institution and is under the control of the Department of Technical Education, Government of Karnataka. 
+            </article>
+        </section>
+        
+        <section class="pt-4">
             <div class="container">
-                <div class="row">
+<!--                <div class="row">-->
+<!--
                     <aside class="col-sm-12 col-md-3 pb-4">
                         <h1 class="text-center">Aside 1</h1>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </aside>
-                    <article class="col-sm-12 col-md-6 pb-4">
-                        <h1 class="text-center">Sometext</h1>
+-->
+<!--                    <article class="col-sm-12 col-md-6 pb-4">-->
+                    <article class="pb-4">
+                        <h1>Courses</h1>
                         <ul class="pl-4">
-                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
-                            <li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</li>
-                            <li>When an unknown printer took a galley of type and scrambled it to make a type specimen book. </li>
-                            <li>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </li>
-                            <li>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</li>
-                            <li>More recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</li>
-                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
-                            <li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</li>
+                            <li>The B.Sc. (Textiles) course was commenced in the year 1946 and in 1973 the same was changed to B.Tech. (Textiles).  </li>
+                            <li>M.Tech. (Textiles) Course was commenced in the year 1970. </li>
+                            <li>B.Tech. (Silk Technology) Course was commenced in the year 1991.  </li>
+                            <li>B.Tech. (Textiles) - Evening College was commenced during 1996-97 for the benefit of Diploma holders in Textile Technology. </li>
+                            <li>The Institute is recognized as Ph.D., Centre for Textile Technology from the academic year 2007-08 by the Visvesvaraya Technological University, Belgaum. </li>
+                            <li>From the year 2007-08 onwards the following B.E. Courses have been started: 
+                                <ul>
+                                    <li>Computer Science and Engineering</li>
+                                    <li>Electronics &amp; Communication Engineering</li>
+                                    <li>Civil Engineering</li>
+                                </ul>
+                            </li>
                         </ul>
                     </article>
+<!--
                     <aside class="col-sm-12 col-md-3 pb-4">
                         <h1 class="text-center">Aside 2</h1>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </aside>
+-->
                 </div>
-            </div>
+<!--            </div>-->
         </section>
         
-        <section class="bg-dark text-white article-section">
+        <section class="bg-dark text-white">
             <div class="container">
                 <div class="row">
                     <main class="col-sm-6 col-lg-3 p-3 text-justify">
@@ -163,7 +195,7 @@
             </div>
         </section>
         
-        <section class="bg-light pt-3 pb-3">
+        <section class="pt-3 pb-3">
             <div class="container">
                 <div class="row">
                     <article class="col-sm-12 col-md-6 mt-4">
@@ -180,7 +212,7 @@
             </div>
         </section>
         
-        <footer class="bg-dark pb-5 pt-5 text-white article-section">
+        <footer class="bg-dark pb-5 pt-5 text-white">
             <div class="container">
                 <p class="display-4">Quick Link</p>
                 <hr/>
@@ -211,7 +243,6 @@
         
 <!--
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> 
 -->
@@ -220,6 +251,45 @@
         <script type="text/javascript" src="js/popper.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
-        
+        <script type="text/javascript">
+            $(function() {
+                //Redundant
+                //------------------------------
+                $(".carousel").carousel({
+                    interval: 5000,
+                    ride: "carousel"
+                });
+                //------------------------------
+                
+                //object-fit: cover
+                //----------------------------------------------------
+                var images = $('.carousel-item');
+                images.each(function (index, element) {
+                    var img = $(element).find("img");
+                    var path = img.prop("src");
+                    img.attr("src", "");
+                    img.attr("alt", "");
+                    
+                    if(path) {
+                        $(element).css({
+                            backgroundImage: "url(" + path + ")",
+                            backgroundSize: "cover",
+                            backgroundPosition: "center center"
+                        });
+                    }
+                });
+                //------------------------------------------------------
+                console.log(window.navigator.userAgent);
+                console.log(
+                    ((window.navigator.userAgent).match(/Chrome\/[0-9\.]*/)) + "\n" +
+                    ((window.navigator.userAgent).match(/Firefox\/[0-9\.]*/)) + "\n" +
+                    ((window.navigator.userAgent).match(/Safari\/[0-9\.]*/)) + "\n" +
+                    ((window.navigator.userAgent).match(/Edge\/[0-9\.]*/))
+                );
+                br = window.navigator.userAgent;
+                
+            });
+                
+        </script>
     </body>
 </html>
